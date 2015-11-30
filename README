@@ -1,0 +1,15 @@
+ansible-role-rsyslog_client
+===========================
+
+This ansible role configures rsyslog to send every log message to a server.
+
+It keeps the same local logfiles as the default rsyslog configuration in
+debian.
+
+
+Configuration
+-------------
+
+  - rsyslog_client_server: the name of the serveur to which the log entries
+    should be sent.
+

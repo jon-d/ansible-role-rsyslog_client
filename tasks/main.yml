@@ -1,0 +1,6 @@
+- name: install rsyslog
+  apt: pkg=rsyslog state=installed
+
+- name: install syslog server configuration
+  template: src=rsyslog.conf dest=/etc/rsyslog.conf
+  notify: restart rsyslog
